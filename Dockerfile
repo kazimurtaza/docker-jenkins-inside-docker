@@ -15,7 +15,8 @@ wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | apt-key add - &&
 echo deb http://pkg.jenkins.io/debian-stable binary/ | tee /etc/apt/sources.list.d/jenkins.list
 
 RUN \
-apt update && \ apt install jenkins -y
+apt update && \
+apt install jenkins -y
 
 # Define working directory.
 WORKDIR /data
