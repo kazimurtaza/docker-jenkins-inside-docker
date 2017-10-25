@@ -16,7 +16,7 @@ echo deb http://pkg.jenkins.io/debian-stable binary/ | tee /etc/apt/sources.list
 
 RUN \
 apt update && \ apt install jenkins -y && \ service jenkins start && \
-service jenkins status && \ docker ps -a
+service jenkins status
 
 # Define working directory.
 WORKDIR /data
