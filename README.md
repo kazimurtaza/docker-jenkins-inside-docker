@@ -1,4 +1,4 @@
-Host Docker Socket inside with jenkins... automate builds 
+Host Docker Socket inside with jenkins... automate builds
 
 # Base Docker Image
 
@@ -10,4 +10,4 @@ Host Docker Socket inside with jenkins... automate builds
 
 
 ### Usage
-docker run -it -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock ubuntu:latest sh -c "bash"
+docker run -it -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock kazimurtaza/docker-jenkins-inside-docker sh -c "bash"
