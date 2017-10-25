@@ -10,3 +10,5 @@ Host Docker Socket inside container with Jenkins... so when Jenkins needs to per
 
 ### Usage
 docker run -it -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock kazimurtaza/docker-jenkins-inside-docker sh -c "bash"
+
+-p 8080:8080 is for jenkins which will be installed inside.
