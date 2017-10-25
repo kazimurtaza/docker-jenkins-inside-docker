@@ -12,7 +12,7 @@ RUN \
 apt update && \
 apt install docker.io wget -y && \
 wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | apt-key add - && \
-echo deb http://pkg.jenkins.io/debian-stable binary/ | tee /etc/apt/sources.list.d/jenkins.list && \
+(echo (deb http://pkg.jenkins.io/debian-stable binary/ | tee /etc/apt/sources.list.d/jenkins.list)) && \
 apt update && \ apt install jenkins -y && \ service jenkins start && \
 service jenkins status && \ docker ps -a
 
